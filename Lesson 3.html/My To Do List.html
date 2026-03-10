@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            .todo-list li:nth-child(even) 
+            {
+                background-color: #afd2db;
+            }
+            .todo-list li:nth-child(odd) 
+            {
+                background-color: #c2dce3; 
+            }
+        .todo-list
+            {
+                
+                list-style-image: url(icons/unchecked_16.png);
+                list-style-type: none;
+            }
+        .todo-list li
+            {
+                list-style-position: inside;
+                align-items: center;
+                padding: 10px 0 10px 20px;
+                margin-bottom: 2px;
+                    
+            }
+        .todo-list li.checked
+            {
+                list-style-image: url(icons/checked_16.png);
+                text-decoration: line-through;
+                background-color: #939393;
+            }
+        .delete
+            {
+                margin-left: 20px;
+                color: red;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My To Do List</h1>
+        <ol class="todo-list">
+            <li>Hit the gym<span class="delete">&times;</span></li>
+            <li class="checked">Pay bills <span class="delete">&times;</span></li>
+            <li>Meet John<span class="delete">&times;</span></li>
+            <li>Buy eggs<span class="delete">&times;</span></li>
+            <li  class="checked">Read a book<span class="delete">&times;</span></li>
+            <li>Organize office<span class="delete">&times;</span></li>
+            <li>Eat dinner<span class="delete">&times;</span></li>
+            <li>Buy apples<span class="delete">&times;</span></li>
+            <li>Meet George<span class="delete">&times;</span></li>
+            <li>Feed the cat<span class="delete">&times;</span></li>
+            <li  class="checked">White a letter<span class="delete">&times;</span></li>
+            <li>Run 1 km<span class="delete">&times;</span></li>
+        </ol>
+        
+    </body>
+</html>

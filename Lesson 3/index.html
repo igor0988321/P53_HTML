@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            .list1
+            {
+                list-style-type: decimal;
+            }
+            
+            .list2
+            {
+                /*list-style-image: url(pics/greater-than-custom.png);*/
+            }
+            .list2 li
+            {
+                display: inline-block;
+            }
+            
+            .list2>li:after
+            {
+                content: ',';
+            }
+            
+            .list2>li:nth-last-child(1)::after
+            {
+                 content: '';
+            }
+            
+            .list2>li:nth-child(3n+1)
+            {
+                background-color: aqua;
+                list-style-image: url(pics/greater-than-custom.png);
+            }
+            .list3
+            {
+                list-style-type: lower-alpha;
+            }
+            
+            .list4
+            {
+                list-style-position: inside;
+            }
+            
+            .list3 li::marker
+            {
+                color: red;
+                font-size: 20px;
+            }
+            
+            
+            li:after
+            {
+                content: ' ++';
+            }
+            
+            li::before
+            {
+                
+                content: '['counter(number)'] ';
+                counter-increment: number;
+            }
+        </style>
+    </head>
+    <body>
+        <ol class="list1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3
+                <ul>
+                	<li>SubItem 1</li>
+                	<li>SubItem 2</li>
+                	<li>SubItem 3
+                	    <ol class="list3">
+                	    	<li>SubSubItem</li>
+                	    	<li>SubSubItem</li>
+                	    	<li>SubSubItem</li>
+                	    	<li>SubSubItem</li>
+                	    </ol>
+                	</li>
+                	<li>SubItem 4</li>
+                </ul>
+            </li>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+        </ol>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia sequi nostrum deleniti maiores aliquid itaque iste vitae error et. Magnam?</p>
+        <ol class="list1"  start="5">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li value="10">Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+        </ol>
+        
+        <ul class="list2">
+        	<li>Item 1</li>
+        	<li>Item 2</li>
+        	<li>Item 3</li>
+        	<li>Item 4</li>
+        	<li>Item 5</li>
+        </ul>
+        
+        
+        <dl>
+            
+            
+            <dt>HTML</dt>
+            <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat corporis aliquam ab impedit eligendi neque quis, quam culpa est eveniet ea voluptatem hic rem repellendus error dolores in consectetur? Mollitia quos ab maiores deleniti dignissimos delectus assumenda expedita? Et dolor ipsum molestias quod suscipit in eveniet, aperiam repellat officia eum at, alias consequatur? Perferendis veniam ducimus rem eum, dicta eius pariatur velit! Voluptas consectetur laboriosam quae veniam, ut, ducimus alias molestias quibusdam soluta dicta deleniti tenetur quia tempore inventore quisquam cum aperiam quam magnam unde nam. Deserunt sequi velit voluptatem iure, reiciendis voluptates consequatur, qui hic aperiam alias delectus aut!</dd>
+            <dt>HTML</dt>
+            <dd>Hyper Text Markup Language</dd>
+        </dl>
+        
+        
+        <ol class="list4">
+        	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, quam, incidunt quisquam totam, perspiciatis est animi dolor, asperiores voluptas dolorem voluptatibus dolorum repudiandae eum voluptatum reprehenderit perferendis ut nobis. Quibusdam, iusto accusamus. Ullam optio accusamus quia sequi vel aperiam distinctio, earum quis cum? Perspiciatis corporis assumenda eos voluptatem illum unde?</li>
+        	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis dolorem asperiores saepe, praesentium sequi porro. Necessitatibus excepturi, animi, facere nostrum quidem sequi, aspernatur ipsum sapiente illo iusto porro inventore adipisci. Mollitia doloremque debitis culpa quae minus praesentium assumenda magnam modi veniam saepe voluptatem, optio, perferendis consequatur expedita similique. Facilis, mollitia.</li>
+        	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus iusto, atque! Mollitia voluptate quos modi eius consequuntur, eligendi minus deserunt, inventore, aperiam assumenda quod quo enim perspiciatis doloribus expedita reiciendis, tempora quasi hic tempore. Atque maiores possimus corporis, enim. Omnis, odio, illo. Sequi ratione, veritatis quisquam ut reprehenderit harum tempore!</li>
+        	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis vero expedita modi sit doloribus quibusdam cumque error illum eius voluptatum, dignissimos, temporibus repudiandae eaque, ratione ducimus dolorum est aliquam atque provident? Ea, quibusdam dolor temporibus quis recusandae maxime esse explicabo deleniti. Placeat dolorem, quod dolor quaerat illum facere, pariatur necessitatibus!</li>
+        </ol>
+        
+    </body>
+</html>

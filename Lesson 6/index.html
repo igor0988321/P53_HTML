@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            body{
+                background-color: #fdfde0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+                margin: 0;
+                font-family: Arial, sans-serif;
+                overflow: hidden;
+            }
+            h1{
+                text-transform: uppercase;
+                font-size: 40px;
+                margin-bottom: 50px;
+            }
+            .container{
+                display: flex;
+                gap: 20px;
+                align-items: flex-end
+            }
+            .a1{
+                width: 100px;
+                height: auto;
+                transform: translateY(100vh);
+                animation: anime 2s ease-out forwards;
+            }
+            @keyframes anime{
+                to{
+                    transform: translateY(0) rotate(var(--rotate));
+                }
+            }
+            
+        /* Настройка задержки и угла поворота для каждой иконки */
+        .a1:nth-child(1) { --rotate: -15deg; animation-delay: 0s; }
+        .a1:nth-child(2) { --rotate: 7deg;   animation-delay: 0.5s; }
+        .a1:nth-child(3) { --rotate: 0deg;   animation-delay: 1s; }
+        .a1:nth-child(4) { --rotate: 15deg;  animation-delay: 1.5s; }
+        .a1:nth-child(5) { --rotate: -10deg; animation-delay: 2s; }
+        </style>
+    </head>
+    <body>
+        <h1>Hello, my site!</h1>
+        <div class="container">
+            <img src="/png2/icons_practice_module_4/calc.png" class="a1" alt="Calculator">
+            <img src="/png2/icons_practice_module_4/book.png" class="a1" alt="Book">
+            <img src="/png2/icons_practice_module_4/paper.png" class="a1" alt="paper">
+            <img src="/png2/icons_practice_module_4/pallete.png" class="a1" alt="Palette">
+            <img src="/png2/icons_practice_module_4/pencil.png" class="a1" alt="Pencil">
+        </div>
+    </body>
+</html>

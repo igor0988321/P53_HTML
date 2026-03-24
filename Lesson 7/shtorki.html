@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            .cont{
+                width: 600px;
+                margin: auto;  
+                margin-top: 200px;
+            }
+            
+            .block
+            {
+                
+            }
+            
+            .box{
+                width: 300px;
+                height: 150px;
+                background-color: #b509b1;
+                border: 3px solid #7a0777;
+                transition: all 1s ease;
+                perspective: -500px;
+            }
+            
+            .b1{
+                float: left;
+                transform-origin: left;
+                
+            }
+            
+            .b2{
+                margin-left: 300px;
+                transform-origin: right;
+            }
+            
+            .block:hover > .b1, .block:hover > .b2
+            {
+                transform: rotateY(50deg);
+                
+                perspective: 500px;
+               
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="cont">
+        	<div class="block">
+        		<div class="box b1"></div>
+        		<div class="box b2"></div>
+        	</div>
+        </div>
+    </body>
+</html>

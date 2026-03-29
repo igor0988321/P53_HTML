@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+        
+        
+        table{
+            width: 80%;
+            max-width: 800px;
+            min-width: 600px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            font-family: Segoe UI;
+            
+             /*border-radius: 0;*/
+        }
+        
+        caption{
+            text-align: right;
+            color: #666666;
+            font-weight: 700;
+        }
+        
+        th{
+            color: white;
+            text-transform: uppercase;
+        }
+        
+        tr th:first-child{
+            color:#666666;
+        }
+        
+        .col1{
+            background-color: #dddddd;
+        }
+        
+        .col2{
+            background-color: #4cffee;
+            width: 17%;
+        }
+        
+        .col3{
+            background-color: #0fdd2b;
+            width: 17%;
+        }
+        
+        .col4{
+            background-color: #efe31f;
+            width: 17%;
+        }
+        
+        .col5{
+            background-color: #fe2d2d;
+            width: 17%;
+        }
+        
+        tr{
+            height: 50px;
+        }
+        
+        td, th{
+            text-align: center;
+        }
+        
+        span{
+            color:white;
+            font-weight: 700;
+            font-size: 18px;
+            display: inline-block;
+            border: 3px solid;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            
+        }
+        
+        tr td:first-child{
+            color:#666666;
+            padding-left: 10px;
+            font-weight: 400;
+            font-size: 1em;
+            text-align: left;
+        }
+        
+        thead{
+            border-bottom: 1px solid white;
+        }
+        
+        tfoot{
+           border-top: 1px solid white;
+        }
+
+            
+        thead tr th:first-child {
+            border-radius: 20px 0 0 0;
+        }
+        
+        thead tr th:last-child {
+            border-radius: 0 20px 0 0;
+        }
+        
+    </style>
+</head>
+<body>
+	<div class="cont">
+	    <table>
+	    <caption>TITLE TABLE</caption>
+	    <colgroup>
+	        <col class="col1">
+	        <col class="col2">
+	        <col class="col3">
+	        <col class="col4">
+	        <col class="col5">
+	    </colgroup>
+	        <thead>
+	            <tr>
+	                <th>fksjdhfsd</th>
+	                <th>sdflskdlfk</th>
+	                <th>sdflksjdlkf</th>
+	                <th>ieroieori</th>
+	                <th>jerjferf</th>
+	            </tr>
+	        </thead>
+	            <tbody>
+	            <tr>
+	                <td>erwerwerwer</td>
+	                <td><span>+</span></td>
+	                <td><span>+</span></td>
+	                <td><span>+</span></td>
+	                <td><span>-</span></td>
+	            </tr>
+	            <tr>
+	                <td>tryurtyutyu</td>
+	                <td><span>+</span></td>
+	                <td><span>+</span></td>
+	                <td><span>-</span></td>
+	                <td><span>-</span></td>
+	            </tr>
+	            <tr>
+	                <td>qwerqwerwqer</td>
+	                <td><span>+</span></td>
+	                <td><span>+</span></td>
+	                <td><span>+</span></td>
+	                <td><span>+</span></td>
+	            </tr>
+	            <tr>
+	                <td>rtyretytye</td>
+	                <td><span>-</span></td>
+	                <td><span>-</span></td>
+	                <td><span>-</span></td>
+	                <td><span>+</span></td>
+	            </tr>
+	            <tr>
+	                <td>qwerqwerwe</td>
+	                <td><span>+</span></td>
+	                <td><span>+</span></td>
+	                <td><span>-</span></td>
+	                <td><span>-</span></td>
+	            </tr>
+	            <tr>
+	                <td>werwerwer</td>
+	                <td><span>+</span></td>
+	                <td><span>+</span></td>
+	                <td><span>-</span></td>
+	                <td><span>+</span></td>
+	            </tr>
+	        </tbody>
+	        <tfoot>
+	            <tr>
+	                <th>TOTAL</th>
+	                <th>$ 32</th>
+	                <th>$ 34</th>
+	                <th>$ 67</th>
+	                <th>$ 23</th>
+	            </tr>
+	        </tfoot>
+	    </table>
+	</div>
+</body>
+</html>

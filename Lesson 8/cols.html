@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            caption{
+                caption-side: top;
+                text-align: right;
+            }
+            
+            thead{
+                color:blueviolet;
+                /*background-color: antiquewhite;*/
+            }
+            
+            tfoot{
+                color:darkred;
+            }
+            
+            .col1{
+                background-color: antiquewhite;
+            }
+            .col2{
+                background-color: #00ffe6;
+                width: 200px;
+            }
+            .col3{
+                background-color: darkgrey;
+                width: 200px;
+                color: blue;
+            }
+            
+            td{
+                padding: 10px;
+            }
+            span{
+                border: 3px solid;
+                border-radius: 50%;
+                display: block;
+                width: 25px;
+                padding: 5px;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+                margin: auto;
+            }
+        
+        </style>
+    </head>
+    <body>
+        
+        <table>
+           <caption>Заголовок</caption>
+           <colgroup>
+               <col span="2" class="col1">
+               <col span="4" class="col2">
+               <col class="col3">
+               
+           </colgroup>
+           <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Item</th>
+                    <th>Item</th>
+                    <th>Item</th>
+                    <td><span>+</span></td>
+                    <th>Item</th>
+                    <th>Item</th>
+                </tr>
+                <tr>
+                    <th>Item</th>
+                    <th>Item</th>
+                    <th>Item</th>
+                    <th>Item</th>
+                    <th>+</th>
+                    <th>Item</th>
+                    <th>Item</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>+</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                </tr>
+                <tr>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                    <td>+</td>
+                    <td>Item</td>
+                    <td>Item</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                    <td>+</td>
+                    <td>Cell</td>
+                    <td>Cell</td>
+                </tr>
+            </tfoot>
+           
+        </table>
+        
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Enterprise Card</title>
+    <style>
+        .card {
+            position: relative;
+            width: 188px;
+            padding: 18px -4px;
+            cursor: pointer;
+        }
+
+        /* 1. Слой рамки: увеличивается только он */
+        .card-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            z-index: 1;
+            transition: transform 0.3s ease;
+        }
+
+        /* Эффект увеличения рамки */
+        .card:hover .card-bg {
+            transform: scale(1.1);
+            outline: 10px solid rgba(0, 0, 0, 0.05);
+            outline-offset: 5px;
+        }
+
+        /* 2. Слой контента: стоит на месте */
+        .card-content {
+            position: relative;
+            z-index: 2; /* Поверх рамки */
+            text-align: center;
+            font-family: sans-serif;
+            pointer-events: none; /* Пропускает клики сквозь себя на кнопку */
+        }
+
+        h3 {
+            margin: 0;
+            padding-bottom: 10px;
+            display: inline-block;
+            position: relative;
+            font-size: 20px;
+        }
+
+        /* ТА САМАЯ ПОЛОСКА ПОД НАЗВАНИЕМ */
+        .top-line {
+            width: 100%;
+            height: 3px;
+            background: #d64541;
+            margin: 5px auto 15px auto; /* Центрируем под текстом */
+        }
+
+        /* Стили текста и кнопки */
+        .price { font-size: 24px; font-weight: bold; margin: 10px 0; }
+        .price span { font-size: 12px; color: #888; display: block; }
+        
+        .features { 
+            list-style: none; 
+            padding: 0; 
+            margin: 20px 0; 
+            color: #555; 
+            font-size: 14px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #d64541;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            pointer-events: auto; /* Делаем кнопку кликабельной */
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="card-bg"></div> 
+
+    <div class="card-content">
+        <h3>ENTERPRISE</h3>
+        <div class="top-line"></div> <div class="price">$69 <span>per month</span></div>
+        
+        <ul class="features">
+            <li>10GB disk space</li>
+            <li>100GB monthly bandwidth</li>
+        </ul>
+        
+        <a href="#" class="btn">BUY</a>
+    </div>
+</div>
+
+</body>
+</html>

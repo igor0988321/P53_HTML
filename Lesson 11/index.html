@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            
+            .cont{
+                display: flex;
+                border: 1px solid;
+                height: 256px;
+                flex-direction: column;
+                
+                /*flex-wrap: wrap;*/
+                
+                /*головна вісь*/
+                /*justify-content: space-evenly;*/
+                
+                
+                /*другорядна вісь*/      
+                align-items: flex-start;
+                
+                align-content: space-around;
+                
+                
+                
+            }
+            
+            .bl{
+                padding: 20px 40px;
+                /*width: 150px;*/
+                /*height: 100px;*/
+                /*flex-basis: 100px;*/
+                
+            }
+            
+            .bl1{
+                background-color: aqua;
+                flex-basis: 25%;
+                order: 1;
+                align-self: center;
+            }
+            
+            .bl2{
+                background-color: chartreuse;
+                flex-basis: 50px;
+            }
+            
+            .bl3{
+                background-color: brown;
+                /*width: 100px;*/
+                /*height: 200px*/
+                flex-grow: 1;
+            }
+            
+            .bl4{
+                background-color: coral;
+                flex-grow: 1;
+                order: -1;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+            <div class="bl bl1">1</div>
+            <div class="bl bl2">2</div>
+            <div class="bl bl3">3</div>
+            <div class="bl bl4">4</div>
+            <!--
+            <div class="bl bl1">1</div>
+            <div class="bl bl2">2</div>
+            <div class="bl bl3">3</div>
+            <div class="bl bl4">4</div>
+            -->
+        </div>
+    </body>
+</html>

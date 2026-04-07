@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            body{
+                font-family: sans-serif;
+                background-color: #f4f7f6;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+            }
+            
+            .cont{
+                background-color: white;
+                padding: 30px;
+                max-width: 1000px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                
+            }
+            
+            .text h2{
+                margin-top: 0;
+            }
+            
+            .side{
+                display: flex;
+                flex-direction: column;
+                
+            }
+            
+            .menu3{
+                border: 1px solid #b0c4de;
+                border-radius: 8px;
+                overflow: hidden;
+                background-color: #d1e0f0;
+                flex: 1;
+            }
+            
+            .menu2{
+                background-color: #3e5f77;
+                color: white;
+                padding: 10px 15px;
+                font-weight: bold;
+            }
+            
+            .menu1{
+                padding: 10px 15px;
+                border-top: 1px solid #b0c4de;
+                font-size: 14px;
+                color: #444;
+            }
+            
+            
+            @media screen and (min-width: 600px) and (max-width: 800px){
+                .side{
+                    flex-direction: row;
+                }
+            }
+            
+            
+            @media screen and (min-width: 800px){
+                .cont{
+                    flex-direction: row;
+                    align-items: flex-start;
+                }
+                
+                .text{
+                    flex: 3;
+                }
+                
+                .side{
+                    flex: 1;
+                    min-width: 250px;
+                }
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+        <article class="text">
+            <h2>Introduction</h2>
+            <p>Aenean dictum elit sapien, et tempor leo malesuada eget. Praesent sed metus laoreet lacus suscipit auctor in id turpis. Nullam a sapien quis urna tincidunt hendrerit. Nulla consectetur varius diam, et tincidunt velit ullamcorper ac.</p>
+            
+            <h3>Additional information</h3>
+            <p>Duis sed pharetra odio. Donec luctus posuere nibh, eget posuere nisl varius vel. Maecenas urna ante, facilisis id libero ut, vestibulum tristique lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+            <p>Aenean non placerat eros. Aliquam consequat quis lorem non vulputate. Mauris urna magna, porttitor eget posuere nec, dictum at mi.</p>
+        </article>
+
+        <aside class="side">
+            <div class="menu3">
+                <div class="menu2">Actions</div>
+                <div class="menu1">Integer ut magna cursus eros</div>
+                <div class="menu1">Fusce imperdiet sapien a sem</div>
+                <div class="menu1">Sed ac ligula in neque tincidunt</div>
+            </div>
+
+            <div class="menu3">
+                <div class="menu2">Plans</div>
+                <div class="menu1">Morbi at diam suscipit mauris</div>
+                <div class="menu1">Donec vel odio malesuada</div>
+            </div>
+        </aside>
+    </div>
+    </body>
+</html>

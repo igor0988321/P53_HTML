@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+       <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .main {
+        background: white;
+        border: 1px solid #ccc;
+        padding: 20px;
+        display: flex;
+        flex-direction: column; 
+        max-width: 800px;
+        width: 100%;
+    }
+    
+    .pict {
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 150px;
+        flex: 1;
+    }
+    
+    .pict img {
+        width: 200px;
+    }
+    
+    .info {
+        flex: 2;
+    }
+    
+    .progres {
+        border: 1px solid #4a6fa5;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .progres1 {
+        background-color: #cbd5e1;
+        padding: 5px 10px;
+        width: 40%;
+        border-right: 1px solid #4a6fa5; 
+    }
+    
+    .progres2 {
+        padding: 5px 10px;
+        color: #555;
+    }
+    
+    .text {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .text1 {
+        font-size: 12px;
+        color: #666;
+        font-style: italic;
+    }
+    
+    .btn {
+        background-color: #3b5998;
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        font-weight: bold;
+        cursor: pointer;
+        align-self: stretch; 
+    }
+
+    
+    @media screen and (min-width: 600px) {
+        .main {
+            flex-direction: row; 
+            align-items: flex-start;
+        }
+
+        .btn {
+            align-self: flex-start; 
+        }
+
+        .pict {
+            max-width: 200px; 
+            margin-right: 10px;
+        }
+    }
+</style>
+</head>
+<body>
+	<div class="main">
+	    <div class="pict"><img src="/png2/icons_practice_module_6_7/loading.png" alt=""></div>
+	    <div class="info">
+	        <div class="progres">
+	            <div class="progres1">UPLOADING 40%</div>
+	            <div class="progres2">About 23 minutes remaining</div>
+	        </div>
+	        <div class="text">Title of video</div>
+	        <div class="text1">* Your video is still uploading. Please keep this page open until it's done.</div>
+	    </div>
+	    <button class="btn">DONE</button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Title</title>
+        <style>
+            .cont {
+                width: 900px;
+                margin: auto;
+                background-color: antiquewhite;
+                position: relative;
+            }
+
+            img {
+                width: 300px;
+            }
+
+            .cats {
+                position: absolute;
+                top: 0;
+                left: 546px;
+            }
+
+            .t {
+                width: 500px;
+            }
+            
+            @media screen and (max-width:800px)
+            {
+                .cont {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .cats {
+                    display: flex;
+                    flex-direction: row;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    order: -1;
+                }
+
+                .t1 {
+                    order: -1;
+                }
+            }
+            
+            @media screen and (max-width:600px)
+            {
+                .cats {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cont">
+            <div class="t t1">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora voluptatum est fuga, eligendi nam
+                    quisquam dolores atque aspernatur cum exercitationem voluptatem expedita alias animi harum corporis,
+                    dolor beatae velit a distinctio reprehenderit tenetur. Odio quibusdam architecto ad ullam. Eveniet
+                    ullam perspiciatis et consequuntur tenetur numquam iste minus, adipisci omnis rem.
+                </p>
+            </div>
+            <div class="t t2">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea aliquam dolor esse accusamus, nam
+                    maxime at id est atque quis corporis, praesentium sunt! Suscipit officiis beatae nemo cum eum
+                    repellendus maiores reiciendis ipsa optio ipsum nobis, quibusdam facere quisquam quia asperiores
+                    corrupti similique exercitationem totam iste consequatur vel nam placeat fugit quod. Dolorum quaerat
+                    aliquid molestias! Iure, unde qui. Ratione corporis voluptatem quidem. Rem sunt corrupti laborum
+                    aperiam placeat possimus.
+                </p>
+            </div>
+            <div class="cats">
+                <div class="cat c1">
+                    <img src="cat1.jpg" alt="" />
+                </div>
+                <div class="cat c2">
+                    <img src="cat2.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

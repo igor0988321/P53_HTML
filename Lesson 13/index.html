@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            .main{
+                display: flex;
+                background-color: #e0e0e0;
+                padding: 50px;
+                font-family: sans-serif;
+            }
+            
+            .side{
+                display: flex;
+                flex-direction: column;
+                width: 150px;
+            }
+            
+            .menu{
+                padding: 20px;
+                background-color: #888;
+                color: white;
+                text-align: center;
+                cursor: pointer;
+                border-bottom: 1px solid #999;
+                white-space: nowrap;
+                
+            }
+            
+            .menu:first-child{
+                background-color: #444;
+            }
+            
+            .menu:hover{
+                background-color: #222;
+            }
+            
+            .content{
+                flex-grow: 1;
+                background-color: #555;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+                padding: 40px;
+                color: white;
+            }
+            
+            .card{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .img{
+                background-color: #aaa;
+                height: 180px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #555;
+                font-weight: bold;
+                margin-bottom: 15px;
+            }
+            
+            .card h3{
+                margin: 0 0 10px 0;
+                font-size: 1.1rem;
+            }
+            
+            .card p{
+                font-size: 0.9rem;
+                margin: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <aside class="side">
+                <div class="menu">Tab 2</div>
+                <div class="menu">Tab 3</div>
+                <div class="menu">Tab 4</div>
+            </aside>
+            
+            <main class="content">
+                <div class="card">
+                   <div class="img">350 x 220</div>
+                   <h3>Header 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non nemo sunt repellendus provident natus qui inventore laborum, quibusdam praesentium assumenda.</p>
+                </div>
+                
+                <div class="card">
+                   <div class="img">350 x 220</div>
+                   <h3>Header 2</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi molestias harum qui culpa ex rerum ipsam quisquam ipsum nulla quia?</p>
+                </div>
+                
+                <div class="card">
+                   <div class="img">350 x 220</div>
+                   <h3>Header 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae libero culpa tempore fugiat doloremque repudiandae architecto magnam quas quis distinctio!.</p>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

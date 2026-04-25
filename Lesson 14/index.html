@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+   
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #008b8b;
+        }
+
+        
+        .app-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        
+        .main-header {
+            background-color: #007a7a;
+            color: white;
+            padding: 15px 20px;
+            position: sticky;
+            left: 0;
+            z-index: 10;
+        }
+
+        
+        .board-wrapper {
+            flex: 1;
+            overflow-x: auto; 
+            padding: 20px;
+        }
+
+        .board {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            height: 100%; 
+        }
+        
+        .footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+        }
+        
+        .stats{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .column {
+            background-color: #d3d3d3; 
+            min-width: 300px;
+            max-width: 400px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            max-height: 350px;;
+            
+        }
+        
+        .item{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 12px;
+            
+        }
+        
+        
+        
+        .item img{
+            width: 16px;
+            height: 16px;
+            
+        }
+
+        .column h2 {
+            padding: 15px;
+            font-size: 1.1rem;
+        }
+
+        
+        .card-list {
+            padding: 0 10px 10px 10px;
+            overflow-y: auto; 
+        }
+        
+        .avatar{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            
+        }
+        
+        .avatar img{
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .card {
+            background: white;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <header class="main-header">
+            <h1>MY BOARDS</h1>
+        </header>
+
+        <main class="board-wrapper">
+            <div class="board">
+                <section class="column">
+                    <h2>To Do</h2>
+                    <div class="card-list">
+                        <div class="card">
+                        Lorem ipsum dolor sit amet...
+                        <div class="footer">
+                            <div class="stats">
+                                <div class="item">
+                                    <img src="png/justify_26.png" alt="">
+                                </div>
+                                
+                                <div class="item">
+                                    <img src="png/checkbox_26.png" alt="">
+                                    <span>4/8</span>
+                                </div>
+                                <div class="item">
+                                    <img src="png/attach_26.png" alt="">
+                                    <span>2</span>
+                                </div>
+                                <div class="item">
+                                    <img src="png/comments_26.png" alt="">
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="avatar">
+                                <img src="png/avatar_1.png" alt="">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">In sed eros sed magna...
+                            <div class="footer">
+                            <div class="stats">
+                                <div class="item">
+                                    <img src="png/justify_26.png" alt="">
+                                </div>
+                                
+                                <div class="item">
+                                    <img src="png/checkbox_26.png" alt="">
+                                    <span>0/3</span>
+                                </div>
+                                <div class="item">
+                                    <img src="png/attach_26.png" alt="">
+                                    <span>7</span>
+                                </div>
+                            </div>
+                            <div class="avatar">
+                                <img src="png/avatar_1.png" alt="">
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                        Lorem ipsum dolor sit amet...
+                        <div class="footer">
+                            <div class="stats">
+                                <div class="item">
+                                    <img src="png/justify_26.png" alt="">
+                                </div>
+                                
+
+                                <div class="item">
+                                    <img src="png/attach_26.png" alt="">
+                                    <span>1</span>
+                                </div>
+                                <div class="item">
+                                    <img src="png/comments_26.png" alt="">
+                                    <span>1</span>
+                                </div>
+                            </div>
+                            <div class="avatar">
+                                <img src="png/avatar_2.png" alt="">
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                        Lorem ipsum dolor sit amet...
+                        <div class="footer">
+                            <div class="stats">
+                                <div class="item">
+                                    <img src="png/justify_26.png" alt="">
+                                </div>
+                                
+                                <div class="item">
+                                    <img src="png/checkbox_26.png" alt="">
+                                    <span>4/8</span>
+                                </div>
+                                <div class="item">
+                                    <img src="png/attach_26.png" alt="">
+                                    <span>2</span>
+                                </div>
+                                <div class="item">
+                                    <img src="png/comments_26.png" alt="">
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="avatar">
+                                <img src="png/avatar_1.png" alt="">
+                            </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                        Lorem ipsum dolor sit amet...
+                        <div class="footer">
+                            <div class="stats">
+                                <div class="item">
+                                    <img src="png/justify_26.png" alt="">
+                                </div>
+                                
+                                <div class="item">
+                                    <img src="png/checkbox_26.png" alt="">
+                                    <span>4/8</span>
+                                </div>
+                                <div class="item">
+                                    <img src="png/attach_26.png" alt="">
+                                    <span>2</span>
+                                </div>
+                                <div class="item">
+                                    <img src="png/comments_26.png" alt="">
+                                    <span>4</span>
+                                </div>
+                            </div>
+                            <div class="avatar">
+                                <img src="png/avatar_1.png" alt="">
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                </section>
+
+                <section class="column">
+                    <h2>In Process</h2>
+                    <div class="card-list">
+                        <div class="card">Quisque ut mi eget nisl...</div>
+                    </div>
+                </section>
+
+                </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            *{
+                font-family: Segoe UI;
+            }
+            .cont{
+                width: 400px;
+                margin: auto;
+                border: 1px solid;
+                border-radius: 20px;
+                padding: 20px;
+            }
+            
+            
+            input, select, fieldset{
+                margin-bottom: 15px;
+            }
+            
+            input[id="name"]{
+                width: 384px;
+                padding: 5px;
+                margin-bottom: 15px;
+            }
+            
+            input[id="email"]{
+                width: 384px;
+                padding: 5px;
+                margin-bottom: 15px;
+            }
+            
+            input[id="phone"]{
+                width: 384px;
+                padding: 5px;
+                margin-bottom: 15px;
+            }
+            
+            textarea{
+                width: 384px;
+                height: 50px;
+                padding: 5px;
+                margin-bottom: 15px;
+            }
+            
+            input[type="submit"]{
+                width: 188px;
+                padding: 5px;
+                margin-right: 15px;
+                background-color: aquamarine;
+                border-radius: 10px;
+                border: 1px solid #037353;
+            }
+            
+            input[type="reset"]{
+                width: 174px;
+                padding: 5px;
+                margin-left: 15px;
+                background-color: crimson;
+                color: antiquewhite;
+                border-radius: 10px;
+            }
+        
+        </style>
+    </head>
+    <body>
+       <div class="cont">
+           <h2>Main form</h2>
+            <form method="get">
+                <!--<label for="name">Name</label>-->
+                <input type="text" name="name" id="name" required placeholder="Name"><br/>
+                
+                <input type="email" name="email" id="email" placeholder="E-mail"><br/>
+                
+                <input type="tel" name="phone" id="phone" placeholder="Phonenumber"><br/>
+                
+                <textarea name="text_ar" id="text_ar" placeholder="Message"></textarea>
+                
+                <label for="name">Subscribe?</label>
+                <input type="checkbox" checked name="subscr" id="subscr"><br/>
+                
+                
+                <fieldset>
+                   <legend>Sex</legend>
+                    <input type="radio" name="sex" id="gender1" value="male" checked>Male
+                    <input type="radio" name="sex" id="gender2" value="female">Female
+                    <input type="radio" name="sex" id="gender3" value="other">Other <br/>
+                </fieldset>
+                
+                <input type="password" name="password" id="password" placeholder="Password"> <br/>
+                
+                <input type="date" name="date" id="date" value="2000-12-12">
+                
+                <input type="time" name="time" id="time"><br/>
+                
+                <select name="month" id="month">
+                    <option value="jan">January</option>
+                    <option value="feb">February</option>
+                    <option value="mar">Marth</option>
+                    <option value="apr">April</option>
+                </select> <br/>
+                
+                <input type="color"> <br/>
+                <input type="file" name="file" id="file"><br/>
+                <input type="number" name="num" id="num" step="2" value="0">
+                
+                <br/>
+                <input type="submit" value="Send">
+                <input type="reset" value="Clear">
+                
+                
+            </form>
+       </div>
+        
+    </body>
+</html>

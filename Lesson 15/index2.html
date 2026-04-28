@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card-container {
+            background-color: #89c4c4;
+            width: 500px;
+            padding: 40px;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .head {
+            left: -15px;
+            background-color: #e66b33;
+            color: white;
+            padding: 10px 30px;
+            font-weight: bold;
+            position: absolute;
+            top: 40px;
+            width: 394px;
+            
+        }
+
+        form {
+            margin-top: 60px;
+            position: relative;
+            z-index: 2;
+            width: 61%;
+        }
+
+        .input1 {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            color: #4a7a7a;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #2c4e4e;
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        input::placeholder {
+            color: rgba(44, 78, 78, 0.5);
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .col{ flex: 2; }
+        .col-cvv { flex: 1; }
+
+        .expiry {
+            display: flex;
+            gap: 10px;
+        }
+
+        
+        .img1 {
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            width: 250px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card-container">
+    <div class="head">CREDIT CARD DETAILS</div>
+    
+    <form>
+        <div class="input1">
+            <label for="card-num">Card Number</label>
+            <input type="text" id="card-num" placeholder="1234 5678 9012 3456" maxlength="19">
+        </div>
+
+        <div class="input1">
+            <label for="card-name">Name On Card</label>
+            <input type="text" id="card-name" placeholder="Name Surname">
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <label>Expire Date</label>
+                <div class="expiry">
+                    <input type="text" placeholder="02" maxlength="2">
+                    <input type="text" placeholder="2017" maxlength="4">
+                </div>
+            </div>
+            <div class="col-cvv">
+                <label for="cvv">CSV No.</label>
+                <input type="password" id="cvv" placeholder="***" maxlength="3">
+            </div>
+        </div>
+    </form>
+
+    <img src="png/icons_ht/moon_flag.png" alt="Moon Flag" class="img1">
+</div>
+
+</body>
+</html>

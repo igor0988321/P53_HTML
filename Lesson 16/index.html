@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Title</title>
+        <style>
+            
+            .main{
+                background-color: #e5e3df
+            }
+            
+            .cont{
+                width: 1172px;
+            }
+            
+            *{
+                font-family: serif;
+            }
+            .header{
+                color: white;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                background-color: #004269;
+                padding: 10px;
+            }
+            .right{
+                font-size: 22px;
+                margin-left: 90px;
+                float: left;
+            }
+            .left{
+                margin-left: 391px;
+                float: right;
+            }
+            
+            .top-menu{
+                border: none;
+            }
+            .inline{
+                border-radius: 6px;
+                padding: 10px;
+                color: gray;
+                background-color: white;
+                border: 1px solid gray;
+                margin-left: 107px;
+                width: 71px;
+                display: inline-block;
+            }
+            .from{
+                width: 114px;
+            }
+            .to{
+                width: 124px;
+                margin-left: 15px;
+            }
+            
+            .depart{
+                width: 153px;
+                margin-left: 10px;
+            }
+            .return{
+                width: 134px;
+                margin-left: 15px;
+            }
+            button{
+                color: white;
+                background-color: #004269;
+                padding: 10px;
+                width: 100px;
+                border-radius: 7px;
+            }
+            .ord{
+                width: 112px;
+                margin-left: 15px;
+            }
+            
+            fieldset{
+                margin-top: 10px;
+                border: none;
+                margin-left: 105px;
+            }
+            
+            .menu{
+                margin-top: 20px;
+                background-color: white;
+                margin-left: 108px;
+                width: 244px;
+                border: 1px solid gray;
+                border-radius: 4px;;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .bord{
+               
+                border-radius: 0;
+            }
+            
+            .zag{
+                margin-top: 20px;
+                margin-left: 20px;
+                font-size: 24px;
+                font-weight: bold;
+            }
+            .zag2{
+                font-weight: bold;
+                color: #004269;
+                margin-top: 21px;
+                margin-left: 20px;
+            }
+            
+            .bord1{
+                margin-left: -96px;
+            }
+            
+           
+            
+            .table{
+                border: 1px solid  #eee;
+                margin-left: 381px;
+                width: 658px;
+                margin-top: -501px;
+            }
+            
+            .row{
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr;
+                padding: 15px 10px;
+                align-items: center;
+                border-bottom: 1px solid #b4b4b4 ;
+                background-color: white;
+            }
+            
+             .header1{
+                color: blue;
+                font-weight: bold;
+                border-top: 1px solid gray;
+            }
+            
+            span{
+                color: gray;
+                font-size: 10px;
+            }
+            
+            .price{
+                font-weight: bold;
+            }
+            
+            .title{
+                font-weight: bold;
+                background-color: white;
+                padding: 47px;
+                text-align: center;
+                font-weight: bold;
+                
+            }
+            
+            .but{
+                margin-left: 18px;
+                color: blue;
+            }
+            
+            .price{
+                display: flex;
+                align-items: flex-end;
+                gap: 10px;
+                font-family: sans-serif;
+            }
+            
+            .input{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .input label{
+                font-size: 14px;
+                font-weight: 500;
+            }
+            .wrap{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+            .wrap input{
+                width: 60px;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                text-align: center;
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <div class="header right">Flights - Search list</div>
+                <div class="header left">Home/Flights Search list</div>
+            </div>
+            <div class="cont">
+                <div class="top-menu">
+                    <fieldset>
+                        <input type="radio" name="way" id="way" value="one-way">One Way
+                        <input type="radio" name="way" id="trip" value="round-trip">Round Trip
+                       
+                    </fieldset>
+                    <div class="inline from">From</div>
+                        <div class="inline to">To</div>
+                        <div class="inline depart">Depart date</div>
+                        <div class="inline return">Return Date</div>
+                        <select name="class" id="class" class="inline ord">
+                           <option class="bord" value="eco">Econom class</option>
+                           <option  class="bord" value="eco+">Econom + class</option>
+                           <option  class="bord" value="first">First class</option>
+                       </select>
+                    <button>Search</button>
+                </div>
+                <div class="menu">
+                    <div class="zag">Filter</div>
+                    <div class="zag2">No. of Stops</div>
+                    <div class="mini-menu">
+                        <fieldset>
+                            <input  class="bord bord1" type="checkbox" name="way" id="none" value="one-way">None Stop <br>
+                            <input class="bord bord1" type="checkbox" name="way" id="stop" value="round-trip">1 Stop <br>
+                            <input  class="bord bord1" type="checkbox" name="" id="2stop" value="">2+ Stop
+                            
+                        </fieldset>
+                    </div>
+                    <div class="zag2">Price</div>
+                    <div class="price">
+                        <div class="input">
+                            <label for="min-price">Min:</label>
+                            <div class="wrap">
+                                <input type="number" id="min-price" value="0">
+                                <span class="$">$</span>
+                            </div>
+                        </div>
+                        <div class="input">
+                            <label for="max-price">Max:</label>
+                            <div class="wrap">
+                                <input type="number" id="max-price" value="1000">
+                                <span class="$">$</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zag2">Airlines</div>
+                    <div>
+                        <fieldset>
+                            <input type="checkbox" name="" id="asia" class="bord bord1">Asia Airlines <br>
+                            <input type="checkbox" name="" id="america" class="bord bord1">American Airlines <br>
+                            <input type="checkbox" name="" id="canada" class="bord bord1">Air Canada <br>
+                            <input type="checkbox" name="" id="india" class="bord bord1">Air India <br>
+                            <input type="checkbox" name="" id="jet" class="bord bord1">Jet Airways <br>
+                            <input type="checkbox" name="" id="spi" class="bord bord1">Spicejet <br>
+                            <input type="checkbox" name="" id="indigo" class="bord bord1">IndiGo <br>
+                            <input type="checkbox" name="" id="multiple" class="bord bord1">Multiple Airlines
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="table">
+                   <div class="title">Dehil to Sydney</div>
+                    <div class="header1 row">
+                        <div>Airlines</div>
+                        <div>Departure</div>
+                        <div>Duration</div>
+                        <div>Arriaval</div>
+                        <div>Price</div>
+                        <div></div>
+                    </div>
+                        <div class="row">
+                            <div>
+                                IndiGo <br>
+                                <span>6E-2489</span>
+                            </div>
+                            <div>23-30 <br>
+                                <span>Dehil</span>
+                            </div>
+                            <div>18h 55m <br>
+                                <span>Non Stop</span>
+                            </div>
+                            <div>18:15 <br>
+                                <span>Sydney</span>
+                            </div>
+                            <div><span class="price">$980</span></div>
+                            <div>
+                                <button>Book</button> <br>
+                                <span class="but">Flights Details</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                IndiGo <br>
+                                <span>6E-2489</span>
+                            </div>
+                            <div>23-30 <br>
+                                <span>Dehil</span>
+                            </div>
+                            <div>18h 55m <br>
+                                <span>Non Stop</span>
+                            </div>
+                            <div>18:15 <br>
+                                <span>Sydney</span>
+                            </div>
+                            <div><span class="price">$980</span></div>
+                            <div>
+                                <button>Book</button> <br>
+                                <span class="but">Flights Details</span>
+                            </div>
+                        </div><div class="row">
+                            <div>
+                                IndiGo <br>
+                                <span>6E-2489</span>
+                            </div>
+                            <div>23-30 <br>
+                                <span>Dehil</span>
+                            </div>
+                            <div>18h 55m <br>
+                                <span>Non Stop</span>
+                            </div>
+                            <div>18:15 <br>
+                                <span>Sydney</span>
+                            </div>
+                            <div><span class="price">$980</span></div>
+                            <div>
+                                <button>Book</button> <br>
+                                <span class="but">Flights Details</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                IndiGo <br>
+                                <span>6E-2489</span>
+                            </div>
+                            <div>23-30 <br>
+                                <span>Dehil</span>
+                            </div>
+                            <div>18h 55m <br>
+                                <span>Non Stop</span>
+                            </div>
+                            <div>18:15 <br>
+                                <span>Sydney</span>
+                            </div>
+                            <div><span class="price">$980</span></div>
+                            <div>
+                                <button>Book</button> <br>
+                                <span class="but">Flights Details</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div>
+                                IndiGo <br>
+                                <span>6E-2489</span>
+                            </div>
+                            <div>23-30 <br>
+                                <span>Dehil</span>
+                            </div>
+                            <div>18h 55m <br>
+                                <span>Non Stop</span>
+                            </div>
+                            <div>18:15 <br>
+                                <span>Sydney</span>
+                            </div>
+                            <div><span class="price">$980</span></div>
+                            <div>
+                                <button>Book</button> <br>
+                                <span class="but">Flights Details</span>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
